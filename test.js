@@ -8,17 +8,17 @@ test('adds 14 + 9 to equal 23', () => {
     expect(total).toBe(23);
 });
 
-test("One euro should be 1.07 dollars", () => {
+test("1 EUR should be 1.07 USD", () => {
     const dollars = fromEuroToDollar(3.5);
     expect(dollars).toBe(3.745); // (3.5 * 1.07)
 });
 
-test('10 USD should be 1.462,61', () => {
+test('10 USD should be 1.462,61 JPY', () => {
     const dollars = fromDollarToYen(10);
-    expect(dollars).toBeCloseTo(1462.616822429907);
+    expect(dollars).toBe(1462.616822429907);
 });
 
-test('100 JPY should be 0,5559105431309904', () => {
+test('100 JPY should be 0,5559105431309904 GBP', () => {
     const pounds = fromYenToPound(100);
     expect(pounds).toBe(0.5559105431309904);
 });
